@@ -1,0 +1,467 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif\r\n"
+    "#include ""res\\3dplot.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // 印刷/印刷プレビュー リソース\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\3dplot.ico"
+IDR_3DPLTYPE            ICON                    "res\\3dplotDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_DATA_SCALE_UP
+    BUTTON      ID_DATA_SCALE_DOWN
+    BUTTON      ID_DATA_NORMARIZE
+    SEPARATOR
+    BUTTON      ID_ANIMATE
+    SEPARATOR
+    BUTTON      ID_RESET_VIEW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "開く(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "最新のﾌｧｲﾙ",                     ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "ｱﾌﾟﾘｹｰｼｮﾝの終了(&X)",            ID_APP_EXIT
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "点でプロット(&P)",                  ID_PLOT_PT
+        MENUITEM "立方体でプロット(&C)",                ID_PLOT_CUBE
+        MENUITEM "球でプロット(&S)",                  ID_PLOT_SPHERE
+        MENUITEM SEPARATOR
+        MENUITEM "フォグ（霧)を表示(&F)",               ID_FOG_EFFECT
+        MENUITEM SEPARATOR
+        MENUITEM "系列毎に色を変える(&B)",               ID_SET_CONDITION
+        MENUITEM "座標軸を表示する(&X)",                ID_SHOW_AXES
+        MENUITEM SEPARATOR
+        MENUITEM "ﾂｰﾙ ﾊﾞｰの表示(&T)",              ID_VIEW_TOOLBAR
+    END
+    POPUP "シーン(&S)"
+    BEGIN
+        MENUITEM "ホーム位置\tH",                    ID_RESET_VIEW
+        MENUITEM "ズームイン\tF5",                   ID_ZOOM_IN
+        MENUITEM "ズームアウト\tF6",                  ID_ZOOM_OUT
+        MENUITEM "データのスケール拡大\tF7",              ID_DATA_SCALE_UP
+        MENUITEM "データのスケール縮小\tF8",              ID_DATA_SCALE_DOWN
+        MENUITEM "データの正規化\tN",                  ID_DATA_NORMARIZE
+        MENUITEM SEPARATOR
+        MENUITEM "ｱﾆﾒｰｼｮﾝ開始/終了\tF9",            ID_ANIMATE
+        POPUP "ｱﾆﾒｰｼｮﾝ効果"
+        BEGIN
+            MENUITEM "ズームを変化させる",                   ID_SHOW_ZOOM
+            MENUITEM "データスケールを変化させる",               ID_SHOW_SCALE
+            MENUITEM "X軸回転",                        ID_XAXES
+            MENUITEM "Y軸回転",                        ID_YAXES
+            MENUITEM "Z軸回転",                        ID_ZAXES
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "傾き検知(ThinkPad専用)\tT",         ID_PROC_TILT_THINKPAD
+    END
+    MENUITEM "&?",                          ID_APP_ABOUT
+END
+
+IDR_CONTEXT MENU 
+BEGIN
+    POPUP "context"
+    BEGIN
+        MENUITEM "ｱﾆﾒｰｼｮﾝ開始・終了",                ID_ANIMATE
+        MENUITEM "ズームを変化させる",                   ID_SHOW_ZOOM
+        MENUITEM "データスケールを変化させる",               ID_SHOW_SCALE
+        MENUITEM "データを正規化する",                   32805
+        MENUITEM "X軸回転",                        ID_XAXES
+        MENUITEM "Y軸回転",                        ID_YAXES
+        MENUITEM "Z軸回転",                        ID_ZAXES
+        MENUITEM SEPARATOR
+        MENUITEM "点でプロット",                      ID_PLOT_PT
+        MENUITEM "立方体でプロット",                    ID_PLOT_CUBE
+        MENUITEM "球でプロット",                      ID_PLOT_SPHERE
+        MENUITEM SEPARATOR
+        MENUITEM "フォグ効果",                       ID_FOG_EFFECT
+        MENUITEM "系列毎に色を変える",                   ID_SET_CONDITION
+        MENUITEM "座標軸を表示する",                    ID_SHOW_AXES
+        MENUITEM SEPARATOR
+        MENUITEM "ホーム位置",                       ID_RESET_VIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F9,          ID_ANIMATE,             VIRTKEY, NOINVERT
+    VK_LEFT,        ID_CLEFT,               VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_CRIGHT,              VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_DATA_NORMARIZE,      VIRTKEY, NOINVERT
+    VK_F8,          ID_DATA_SCALE_DOWN,     VIRTKEY, NOINVERT
+    VK_F7,          ID_DATA_SCALE_UP,       VIRTKEY, NOINVERT
+    VK_DOWN,        ID_DOWN,                VIRTKEY, NOINVERT
+    VK_DOWN,        ID_DOWN_FAST,           VIRTKEY, SHIFT, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_LEFT,                VIRTKEY, NOINVERT
+    VK_LEFT,        ID_LEFT_FAST,           VIRTKEY, SHIFT, NOINVERT
+    "H",            ID_RESET_VIEW,          VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_RIGHT,               VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_RIGHT_FAST,          VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_UP,                  VIRTKEY, NOINVERT
+    VK_UP,          ID_UP_FAST,             VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_ZOOM_IN,             VIRTKEY, NOINVERT
+    VK_F6,          ID_ZOOM_OUT,            VIRTKEY, NOINVERT
+    "T",            ID_PROC_TILT_THINKPAD,  VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 210, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "3D Plot"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,19,18,21,SS_REALSIZEIMAGE
+    LTEXT           "3D Plot Version 1.1",IDC_STATIC,46,23,75,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,161,7,42,16,WS_GROUP
+    GROUPBOX        "Current Data",IDC_STATIC,15,63,179,51
+    LTEXT           "",IDC_POINT,47,77,117,12,SS_SUNKEN
+    LTEXT           "",IDC_SERIES,47,93,117,12,SS_SUNKEN
+    LTEXT           "Copyright (C) 1998-2006 Kondoh Masahiro(MH)",IDC_STATIC,46,41,151,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "FileDescription", "3D Plot"
+            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "InternalName", "3dplot"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2006"
+            VALUE "OriginalFilename", "3dplot.exe"
+            VALUE "ProductName", "3D Plot"
+            VALUE "ProductVersion", "1, 1, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ROLLING             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "3D Plot\n\n\n\n\n\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "3dplot"
+    AFX_IDS_IDLEMESSAGE     "ﾚﾃﾞｨ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "ｶﾅ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"
+    ID_FILE_OPEN            "既存のﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のﾌｧｲﾙを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のﾌｧｲﾙを保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のﾌｧｲﾙに名前を付けて保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷設定の変更\n印刷設定"
+    ID_FILE_PRINT_SETUP     "ﾌﾟﾘﾝﾀ/印刷設定の変更\nﾌﾟﾘﾝﾀの設定"
+    ID_FILE_PRINT           "作業中のﾌｧｲﾙを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "ﾌﾙｽｸﾘｰﾝで表示\n印刷ﾌﾟﾚﾋﾞｭｰ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "ﾊﾞｰｼﾞｮﾝ情報\nﾊﾞｰｼﾞｮﾝ情報"
+    ID_APP_EXIT             "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE2       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE3       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE4       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE5       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE6       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE7       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE8       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE9       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE10      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE11      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE12      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE13      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE14      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE15      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE16      "指定のﾌｧｲﾙを開く"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "次のｳｨﾝﾄﾞｳに切り替える\n次ﾍﾟｰｼﾞ"
+    ID_PREV_PANE            "前のｳｨﾝﾄﾞｳに切り替える\n前ﾍﾟｰｼﾞ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のｳｨﾝﾄﾞｳを分割\n分割"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟ-"
+    ID_EDIT_CUT             "選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\nﾘﾋﾟｰﾄ"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ﾌｧｲﾙ全体を選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\nやり直し"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ﾂｰﾙ ﾊﾞｰの表示/非表示\nﾂｰﾙ ﾊﾞｰの表示/非表示"
+    ID_VIEW_STATUS_BAR      "ｽﾃｰﾀｽ ﾊﾞｰの表示/非表示\nｽﾃｰﾀｽ ﾊﾞｰの表示/非表示"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ｳｨﾝﾄﾞｳのｻｲｽﾞを変更"
+    AFX_IDS_SCMOVE          "ｳｨﾝﾄﾞｳの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ｳｨﾝﾄﾞｳをｱｲｺﾝ化する"
+    AFX_IDS_SCMAXIMIZE      "ｳｨﾝﾄﾞｳを最大表示にする"
+    AFX_IDS_SCNEXTWINDOW    "次のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のｳｨﾝﾄﾞｳを閉じ、変更したﾌｧｲﾙの保存を指示"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ｳｨﾝﾄﾞｳを通常のｻｲｽﾞに戻す"
+    AFX_IDS_SCTASKLIST      "ｱﾌﾟﾘｹｰｼｮﾝの切り替え"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "印刷ﾌﾟﾚﾋﾞｭｰ ﾓｰﾄﾞを閉じる\nﾌﾟﾚﾋﾞｭｰのｷｬﾝｾﾙ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RIGHT                "右回転(→)\n右回転(→)"
+    ID_LEFT                 "左回転(←)\n左回転(←)"
+    ID_UP                   "上回転\n上回転(↑)"
+    ID_DOWN                 "下回転(↓)\n下回転(↓)"
+    ID_CRIGHT               "時計周り(Ctrl+→)\n時計周り(Ctrl+→)"
+    ID_CLEFT                "反時計周り(Ctrl+←)\n反時計周り(Ctrl+←)"
+    ID_RESET_VIEW           "ホーム位置に戻す\nホーム位置(H)"
+    ID_DATA_SCALE_UP        "データのスケール拡大\nデータのスケール拡大(F7)"
+    ID_DATA_SCALE_DOWN      "データのスケール縮小\nデータのスケール縮小(F8)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SET_CONDITION        "系列毎に違った色で表示する\n系列毎に色を変える"
+    ID_ZOOM_IN              "ズームイン\nズームイン(F5)"
+    ID_ZOOM_OUT             "ズームアウト\nズームアウト(F6)"
+    ID_ANIMATE              "アニメーション\nアニメーション(F9)"
+    ID_SHOW_ZOOM            "ズーム\nアニメーション中ズームを変化させる"
+    ID_SHOW_SCALE           "スケール\nアニメーション中データスケールを変化させる"
+    ID_XAXES                "X\nアニメーション中X軸回転"
+    ID_YAXES                "Y\nアニメーション中Y軸回転"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZAXES                "Z\nアニメーション中Z軸回転"
+    ID_SHOW_AXES            "座標軸\nアニメーション中座標軸を表示する"
+    ID_DATA_NORMARIZE       "データの正規化\nデータを正規化する"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif
+#include "res\3dplot.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#include "l.jpn\afxprint.rc"        // 印刷/印刷プレビュー リソース
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
